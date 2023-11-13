@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font-family: "Inter";
+    background: #1D1F29;
+}
+
+img {
+    max-width: 100%;
+}
+
+span {
+    display: inline-block;
+}
+
+/* .rectangle {
+    background: #20222F;
+    height: 244px;
+    border-radius: 0px 0px 20px 20px;
+} */
+
+.container {
+    /* background: red; */
+    width: 1110px;
+    margin: 36px auto 75px;
+}
+
+
+.container .hero {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 46px;
+}
+
+.container .hero .hero-left h1 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.container .hero .hero-left h5 {
+    color: #8C98C6;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.container .hero .hero-right {
+    margin-top: 13px;
+    display: flex;
+    gap: 13px;
+    justify-items: center;
+    align-items: center;
+}
+
+/* .container .hero .hero-right h5 {
+    display: inline-block;
+} */
+
+.container .hero .hero-right span:last-child {
+    /* border: 2px solid brown; */
+    width: 48px;
+    height: 24px;
+}
+
+.grid-followers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.fb,
+.tweet {
+    background: #252B42;
+    border-top: 5px solid #178FF5;
+    border-radius: 5px 5px 0 0;
+    padding: 32px 63px 24px;
+    text-align: center;
+}
+
+.fb .fb-flex,
+.tweet .tweet-flex {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.fb .fb-flex h6,
+.tweet .tweet-flex h6 {
+    color: #8C98C6;
+    font-size: 12px;
+    font-size: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.fb h1:nth-child(2),
+.tweet h1:nth-child(2) {
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -2px;
+    margin-bottom: 9px;
+    /* border: 3px solid green; */
+}
+
+.fb h3:nth-child(3),
+.tweet h3:nth-child(3) {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.fb div:last-child,
+.tweet div:last-child {
+    /* border: 3px solid tomato; */
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.fb div:last-child h5,
+.tweet div:last-child h5 {
+    color: #1EB589;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
