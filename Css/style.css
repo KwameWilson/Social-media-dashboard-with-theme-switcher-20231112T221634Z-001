@@ -24,16 +24,23 @@ span {
     text-align: center;
 }
 
-/* .rectangle {
+.rectangle {
     background: #20222F;
     height: 244px;
     border-radius: 0px 0px 20px 20px;
-} */
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+}
+
 
 .container {
     /* background: red; */
     width: 1110px;
     margin: 36px auto 75px;
+    left: 165px;
+    z-index: 1000;
 }
 
 
@@ -94,9 +101,13 @@ span {
     text-align: center;
 }
 
-.insta {
-    border-top: 5px solid;
-}
+/* .insta {
+    border-top: 5px solid transparent;
+    border-image: linear-gradient(#FDC366, #EE877E) padding-box,
+        linear-gradient(180deg, #EE877E, #FDC366);
+} */
+
+
 
 .yt {
     border-top: 5px solid #C4032B;
@@ -127,7 +138,7 @@ span {
 
 .fb h1:nth-child(2),
 .tweet h1:nth-child(2),
-.insta h1:nth-child(2),
+.insta h1:nth-child(3),
 .yt h1:nth-child(2) {
     font-size: 56px;
     font-style: normal;
@@ -138,9 +149,24 @@ span {
     /* border: 3px solid green; */
 }
 
+.insta {
+    position: relative;
+}
+
+.insta div.border-top {
+    position: absolute;
+    background: linear-gradient(to right, #DF4896, #EE877E);
+    width: 243px;
+    height: 6px;
+    top: -4px;
+    left: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+
 .fb h3:nth-child(3),
 .tweet h3:nth-child(3),
-.insta h3:nth-child(3),
+.insta h3:nth-child(4),
 .yt h3:nth-child(3) {
     text-transform: uppercase;
     font-size: 12px;
@@ -196,7 +222,7 @@ span {
 
 
 
-.container h1:nth-child(3) {
+.container h1.overview {
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
