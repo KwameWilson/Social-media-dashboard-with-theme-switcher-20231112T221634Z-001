@@ -19,6 +19,9 @@ img {
 
 span {
     display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
 }
 
 /* .rectangle {
@@ -158,7 +161,7 @@ span {
     gap: 4px;
     align-items: center;
     justify-content: center;
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
 }
 
 .fb div:last-child h5,
@@ -169,10 +172,73 @@ span {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    /* border: 2px solid blue; */
 }
 
 .yt div:last-child h5 {
     color: #DC414C;
 }
 
-.container h1:nth-child(3) {}
+
+.grid-overview {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+
+
+.page-views {
+    padding: 26px 31px 24px 24px;
+    border-radius: 5px;
+    background: #252B42;
+}
+
+
+
+.container h1:nth-child(3) {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    /* border: 2px solid red; */
+    line-height: normal;
+    margin-bottom: 24px;
+}
+
+.page-views div:first-child {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 21px;
+}
+
+.page-views div:first-child h5 {
+    color: #8C98C6;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* border: 2px solid red; */
+}
+
+.page-views .overview-count {
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-views .overview-count div:nth-child(2) {
+    display: flex;
+    align-items: end;
+    gap: 3px;
+    /* border: 2px solid violet; */
+}
+
+.page-views .overview-count div:nth-child(2) h5 {
+    color: #1EB589;
+}
+
+.grid-overview .page-views:nth-child(2) .overview-count div:nth-child(2) h5,
+.grid-overview .page-views:nth-child(7) .overview-count div:nth-child(2) h5,
+.grid-overview .page-views:nth-child(8) .overview-count div:nth-child(2) h5 {
+    color: #DC414C;
+}
